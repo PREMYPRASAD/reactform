@@ -1,23 +1,22 @@
 
-
-// import Header from './components/Header';
-// import Login from './components/Login';
-import { Component } from 'react';
+import React from 'react';
 import TodoApp from './components/TodoApp/TodoApp';
+import About from './components/About/About';
+import Header from './components/Header/Header';
 
+import { Route,Routes } from 'react-router-dom';
 
-// function App() {
-//     return (
-//         //jsx (javascript XML)
-//         < div className="App" >
-// <Header></Header>
-//             <h1 >Welcome to react </h1>
-//             <Login></Login>
-//         </div >)
-// }
-export class App extends Component {
-    render() {
-        return<div><TodoApp></TodoApp></div>
-    }
-}
-export default App; 
+const App=()=>{
+    return (
+        <>
+    <Header />
+        <Routes>
+            <Route path="/" exact element={<TodoApp />} />
+            <Route path="/about" element={<About />} />
+            
+            </Routes>
+            </>
+
+    );
+};
+export default App

@@ -1,4 +1,4 @@
-body{
+/* body{
     margin:0;
     background-color: #056679;;
     font-family: sans-serif;
@@ -6,11 +6,12 @@ body{
 .todo-container{
     
     width:350px;
-    position:absolute;
-    left:50%;
-    top:50%;
-    transform:translate(-50%,-50%);
-    text-align: center;
+    /* left:50%; */
+    /* top:50%; */
+    /* transform:translate(-50%,-50%); */
+    /* text-align: center;
+    margin:auto;
+    margin-top: 40px;
 
 }
 .input-section{
@@ -58,4 +59,78 @@ ul li i{
     text-align: right;
     flex: 1;
     cursor: pointer;
+} */ 
+
+.container {
+    width: 50%;
+    margin-top: 50px;
+    margin-left: 300px;
+    border: none;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #cde5ebd7;
+
+}
+
+h1 {
+    text-align: center;
+    color: rgb(122, 119, 119);
+    font-weight: 600px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+}
+
+.form-group Button {
+    margin-left: 15px;
+    padding: 15px;
+}
+
+.list {
+    margin-top: 30px !important;
+}
+
+li {
+    margin-bottom: 12px;
+    margin-right: 45px;
+    margin-left: -12px;
+    background-color: rgb(91, 135, 143);
+    padding: 10px;
+    border-radius: 10px;
+    color: rgb(231, 225, 225);
+    font-size: 22px;
+}
+
+.listitems {
+    display: flex;
+}
+
+.listitems .list-item-list {
+    flex: 1;
+}
+
+.listitems .icons {
+    padding-left: 10px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#edit {
+    color: blue;
+}
+
+#delete {
+    color: red;
+}
+
+#complete {
+    color: green
+}
+
+#list-item {
+    text-decoration: line-through;
+    opacity: 0.3;
 }
